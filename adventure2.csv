@@ -1,0 +1,90 @@
+id|storyText|option1Text|option1NextId|option2Text|option2NextId
+1|You stand before Blackthorn Castle on a cold and windy night. The front gate is slightly open, and a narrow path leads around the side of the castle.|Enter through the front gate|2|Walk around the side of the castle|3
+2|The iron gate groans behind you as you step into the courtyard. Broken statues line the path, and the main doors stand slightly ajar.|Enter the main hall|4|Inspect the courtyard fountain|5
+3|The side path is overgrown with thorny vines. You find a cracked servant door and a stairway descending toward a cellar entrance.|Open the servant door|6|Go down to the cellar entrance|7
+4|The main hall is vast and dusty. Torn banners hang from the ceiling, and a grand staircase leads upward while a dark hallway stretches to the east.|Climb the grand staircase|8|Walk down the east hallway|9
+5|The dry fountain contains a stone bowl filled with dead leaves. Under the leaves, you notice something shining faintly.|Take the silver coin|10|Leave the fountain and enter the main hall|4
+6|The servant door opens into an abandoned kitchen. Rusted pots hang above a long table, and a doorway leads into a pantry.|Search the kitchen|11|Enter the pantry|12
+7|You descend into the cellar. The air is damp and cold. Wooden barrels line the walls, and you hear chains rattling somewhere in the darkness.|Search the barrels|13|Follow the sound of the chains|14
+8|The grand staircase creaks beneath your feet. On the upper floor, a portrait gallery stretches ahead, and a door at the far end is marked Master Chamber.|Walk through the portrait gallery|15|Enter the Master Chamber|16
+9|The east hallway is lined with suits of armor. At the end of the corridor, one door leads to a library and another to a chapel.|Enter the library|17|Enter the chapel|18
+10|The silver coin feels unusually cold in your hand. As you lift it, a whisper echoes in the courtyard: Payment remembered.|Keep the coin and enter the hall|4|Drop the coin and back away|2
+11|In the kitchen, you find a candle lantern and a loaf of bread turned to stone with age.|Take the lantern|19|Ignore the items and go to the pantry|12
+12|The pantry shelves are mostly empty, but one jar remains sealed. The label reads Salt.|Take the jar of salt|20|Leave the pantry and return to the kitchen|6
+13|Inside one of the barrels, you find a hidden compartment containing an old brass key.|Take the brass key|21|Leave the barrels and follow the chains|14
+14|The chain sounds lead to a small locked cell. Inside the cell, a pale prisoner watches you silently through the bars.|Use the brass key on the cell|22|Retreat from the prisoner|23
+15|As you walk the portrait gallery, several paintings seem to watch you. One portrait of a stern woman hangs crooked on the wall.|Straighten the portrait|24|Ignore it and continue|25
+16|The Master Chamber contains a rotting bed, a writing desk, and a tall wardrobe. Moonlight spills in through cracked windows.|Search the desk|26|Open the wardrobe|27
+17|The library shelves reach the ceiling, and a spiral staircase leads up to a balcony. A fireplace sits cold and black against the far wall.|Search the bookshelves|28|Inspect the fireplace|29
+18|The chapel is small and ruined. Broken pews face a stone altar. A narrow door behind the altar is partially hidden by a curtain.|Inspect the altar|30|Open the hidden door|31
+19|The lantern flickers to life even without oil. The darkness around you seems to shrink back from its glow.|Take the lantern to the main hall|4|Take the lantern to the cellar|7
+20|The jar of salt is heavy but intact. You remember old stories that salt can ward off spirits.|Keep the salt and return to the kitchen|6|Keep the salt and head for the main hall|4
+21|The brass key is tarnished but sturdy. Something about it suggests it has not been used in years.|Use it later and follow the chains|14|Return upstairs with the key|4
+22|The cell door opens slowly. Inside, the prisoner says he was once the castle steward and begs you to free the castle from the ghost of Lady Blackthorn.|Ask how to stop Lady Blackthorn|32|Do not trust him and leave|23
+23|You back away from the cell, but the chains begin shaking violently. A cold wind drives you toward the stairwell.|Run upstairs to the main hall|4|Hide behind the barrels|33
+24|When you straighten the portrait, the wall clicks and reveals a narrow compartment containing a silver dagger.|Take the silver dagger|34|Leave it and continue down the gallery|25
+25|At the end of the gallery, you reach a moonlit balcony overlooking the courtyard. Below, shadows gather around the fountain.|Go back to the staircase|8|Climb out onto the balcony ledge|35
+26|In the desk, you find a diary. The final pages describe a ritual involving a bell, a family ring, and the castle chapel.|Take the diary and go to the chapel|18|Take the diary and search the wardrobe|27
+27|Inside the wardrobe hangs a moth-eaten black gown. Beneath it rests a small velvet box.|Open the velvet box|36|Leave the wardrobe and return to the hall|8
+28|Among the books, one shelf contains several volumes on local legends. One title, Spirits Bound to Stone, appears newer than the others.|Read Spirits Bound to Stone|37|Climb the spiral staircase|38
+29|The fireplace is full of ash, but scraping it aside reveals a metal lever hidden in the brickwork.|Pull the lever|39|Leave the fireplace and search the shelves|28
+30|On the altar lies a cracked bell and a carved stone ring inset into the surface. Dust covers both.|Take the cracked bell|40|Examine the stone ring|41
+31|The hidden door opens onto a narrow stair descending into darkness beneath the chapel.|Take the hidden stairway|42|Close the door and return to the chapel|18
+32|The steward says Lady Blackthorn trapped the castle in darkness after accusing her family of betrayal. To break her hold, ring the chapel bell while wearing the family ring and stand in the crypt.|Thank him and leave the cellar|4|Ask where the family ring is hidden|43
+33|You hide behind the barrels, but a ghostly hand reaches from the darkness and closes around your shoulder. Your vision fades into black.|Play again|1|Quit|-1
+34|The silver dagger is beautifully made and engraved with the Blackthorn crest. It feels warm compared to the icy air.|Carry the dagger to the Master Chamber|16|Carry the dagger to the chapel|18
+35|You edge along the balcony ledge and reach a broken tower window. Inside is a dusty observatory with a brass telescope.|Enter the observatory|44|Climb back to safety|25
+36|Inside the velvet box lies a gold ring engraved with thorns and a black gemstone.|Take the family ring|45|Leave the ring and close the box|16
+37|The book explains that spirits bound by guilt can be weakened by objects tied to their mortal lives, especially silver and sacred ground.|Take note and go to the chapel|18|Take note and search the upper balcony|38
+38|On the library balcony, you find a reading stand holding a parchment map of the castle. A marked route leads from the chapel to a hidden crypt.|Take the map|46|Leave the map and go downstairs|17
+39|When you pull the lever, one shelf slides aside and reveals a secret study. Inside is a locked chest and a skeletal hand pointing toward it.|Try the brass key on the chest|47|Back away and leave the study|17
+40|The cracked bell is surprisingly intact despite its age. When you lift it, a faint tone hums through the chapel.|Keep the bell and open the hidden stair|42|Set the bell down and examine the altar ring|41
+41|The stone ring on the altar does not move, but carved beneath it are the words Only blood of the house may wear the thorn.|Search elsewhere for a wearable ring|18|Ignore the clue and go downstairs|42
+42|The hidden stairs lead into catacombs beneath the chapel. The path splits between a crypt lined with coffins and a tunnel leading deeper underground.|Enter the crypt|48|Take the deeper tunnel|49
+43|The steward says the family ring was hidden in the Lady's chamber so that no servant would dare touch it. He warns that the ghost protects it fiercely.|Go to the Master Chamber|16|Go to the portrait gallery first|15
+44|The observatory dome is cracked open to the sky. On a small table, you find a moon chart and a mechanical box with rotating symbols.|Study the moon chart|50|Try to open the mechanical box|51
+45|As you place the ring on your finger, a cold whisper says My blood remembers. The gemstone briefly glows red.|Go to the chapel with the ring|18|Go to the crypt with the ring|42
+46|The map shows hidden connections between the library, chapel, and crypt. A note in the margin reads Ring Bell Below.|Take the map to the chapel|18|Take the map to the crypt|42
+47|The brass key opens the chest. Inside is a bundle of letters proving Lady Blackthorn wrongly condemned her younger brother for theft.|Take the letters|52|Leave the letters and exit the study|17
+48|The crypt contains six stone coffins and a central platform marked with a thorn crest. The air is heavy and still.|Stand on the central platform|53|Inspect the coffins|54
+49|The deeper tunnel leads to an underground lake. In the black water, something pale moves just beneath the surface.|Cross the narrow stone path|55|Retreat to the crypt|48
+50|The moon chart marks the anniversary of Lady Blackthorn's death and notes that the observatory once held a lens used in spirit rituals.|Search for the lens|56|Leave the observatory and return inside|35
+51|The box has three rotating symbols: a bell, a ring, and a moon. You can try to align them in a sequence.|Set the symbols to bell-ring-moon|57|Set the symbols to moon-ring-bell|58
+52|The letters describe the truth: Lady Blackthorn's brother was innocent, and her rage after his execution cursed the castle. These letters may help put her spirit to rest.|Take the letters to the crypt|48|Take the letters to the chapel|18
+53|As you stand on the crest, the room grows colder. A ghostly woman in black appears before you, eyes burning with grief and fury.|Speak to Lady Blackthorn|59|Attack her with the silver dagger|60
+54|One coffin lid is already broken. Inside rests a skeleton clutching a small silver cross. Another coffin bears the Blackthorn crest.|Take the silver cross|61|Open the Blackthorn coffin|62
+55|As you cross the narrow path, a skeletal hand rises from the water and grabs your ankle. You slip and vanish into the freezing lake below.|Play again|1|Quit|-1
+56|Behind the telescope, you find a crystal lens mounted in a silver frame.|Take the silver lens|63|Leave it and exit|35
+57|The box clicks open. Inside is a small bone token carved with the same crest as the crypt platform.|Take the bone token|64|Leave it in the box|44
+58|The box emits a sharp shriek, and the room fills with shadows. Something unseen pushes you backward through the broken dome opening.|Play again|1|Quit|-1
+59|Lady Blackthorn says all betrayed her and that the living deserve no mercy. Her gaze fixes on the ring if you are wearing it.|Show her the letters|65|Ring the chapel bell if you have it|66
+60|You lunge with the silver dagger. The blade passes through part of her form, causing her to scream and recoil, but the spirit remains.|Strike again|67|Retreat and try another approach|59
+61|The silver cross burns cold in your palm. A nearby coffin trembles, then falls silent.|Take the cross to the central platform|53|Leave the crypt and return to the chapel|18
+62|Inside the Blackthorn coffin you find no body, only a hidden compartment containing a signet seal and a sealed envelope.|Take the signet seal|68|Take the sealed envelope|69
+63|The silver lens catches even the faintest light and throws it in sharp beams. Perhaps it can reveal hidden markings or weaken spirits.|Take the lens to the crypt|48|Take the lens to the portrait gallery|15
+64|The bone token has a hole through the top as if it once hung on a chain. On the back is carved Steward's Oath.|Bring it to the prisoner|70|Keep it and head to the crypt|48
+65|You hold up the letters. Lady Blackthorn reads them in silence. Her expression changes from rage to sorrow as she realizes the truth of her brother's innocence.|Offer her the signet seal if you have it|71|Ring the bell to complete the ritual|66
+66|The bell's cracked tone echoes through the crypt. If you wear the family ring, the thorn crest beneath your feet begins to glow.|Continue the ritual|72|Stop ringing and flee|73
+67|You strike again, but the spirit swallows the room in darkness. The dagger falls from your hand, and the castle claims another victim.|Play again|1|Quit|-1
+68|The signet seal bears Lady Blackthorn's personal crest. It may symbolize her authority or her identity in death.|Take the seal to the crypt|48|Take the seal to the chapel|18
+69|The sealed envelope contains a final apology written by Lady Blackthorn's brother before his execution. He forgave her for doubting him.|Take the apology to the crypt|48|Take the apology to the observatory|44
+70|When the prisoner sees the bone token, he bows his head and says he truly was the steward. He blesses you and tells you the spirits cannot cross a line of salt.|Use the advice and return upstairs|4|Free the steward and follow him|74
+71|When you present the signet seal, Lady Blackthorn touches it with trembling hands. For the first time, her form becomes less monstrous and more human.|Ask her to release the castle|75|Complete the bell ritual|66
+72|Light bursts from the ring, the bell, and the crypt platform. If you also hold proof of the truth, the spirit's rage begins to unravel.|Read the apology aloud if you have it|76|Hold the silver cross high|77
+73|You flee up the stairs, but the castle doors slam shut and every hallway twists into shadow. There is no escape for the cowardly tonight.|Play again|1|Quit|-1
+74|The steward leads you through a hidden passage to a sealed stone door beneath the castle. The brass key fits, and beyond is the family mausoleum.|Enter the mausoleum|78|Refuse and go back|42
+75|Lady Blackthorn says the castle can only be freed if her brother's innocence is witnessed and the bell is rung by one who bears her name.|Wear the ring and ring the bell|66|Tell her you cannot help and leave|73
+76|As you read the apology aloud, Lady Blackthorn falls to her knees. Her grief breaks, and the darkness in the crypt begins to dissolve into silver mist.|Reach out to her|79|Step back and let the ritual finish|80
+77|The silver cross shines, but without the truth to calm her, Lady Blackthorn shrieks and tears through the light. The crypt collapses around you.|Play again|1|Quit|-1
+78|In the mausoleum, you find the tomb of Lady Blackthorn's brother. Fresh roses lie there though no living person has entered for years.|Place the apology on the tomb|81|Take the roses and leave|82
+79|Your hand passes through cold air, but Lady Blackthorn smiles sadly. She thanks you for ending her hatred and asks that the castle be remembered with mercy.|Accept her thanks|83|Ask for a reward|84
+80|The bell falls silent. The ghost rises in a column of pale light and vanishes. Dawn begins to touch the windows above the crypt.|Leave the castle as the curse breaks|85|Search the crypt one last time|86
+81|As the apology touches the tomb, the mausoleum glows softly. A hidden compartment opens, revealing a jeweled crest and a deed to the lands surrounding the castle.|Take the jeweled crest and leave|87|Leave everything untouched and return to the crypt|48
+82|The roses turn black in your hands, and the air becomes painfully cold. The mausoleum rejects your greed, and the door seals shut forever.|Play again|1|Quit|-1
+83|Lady Blackthorn fades, and the castle grows quiet. The haunting is over. Outside, the first sunrise in decades warms the stones of Blackthorn Castle.|Play again|1|Quit|-1
+84|At your words, her smile vanishes. The last of her grief becomes anger once more, and the shadows rush back into the chamber.|Play again|1|Quit|-1
+85|You walk out through the front gate as ravens circle overhead. Behind you, Blackthorn Castle stands silent but no longer hostile. Villagers later call you the one who ended the curse.|Play again|1|Quit|-1
+86|With the curse lifted, you discover a hidden chamber beneath the crypt floor containing old treasure chests and family records.|Take a chest of gold and leave|88|Take only the records and leave|89
+87|You claim the jeweled crest and the deed. In time, you restore the ruined castle and become its honored keeper rather than its prisoner.|Play again|1|Quit|-1
+88|You leave with gold enough for a lifetime. Though some call you lucky, you know the treasure was earned in the heart of darkness.|Play again|1|Quit|-1
+89|The records preserve the true history of the Blackthorn family and clear the names of the dead. Scholars and villagers alike honor your choice.|Play again|1|Quit|-1

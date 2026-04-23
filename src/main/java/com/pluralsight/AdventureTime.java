@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class AdventureTime
 {
-    static ArrayList<StepClass> adventureSteps;
+    static ArrayList<Step> adventureSteps;
     static Scanner scanner = new Scanner(System.in);
 
     static void main()
@@ -46,41 +46,46 @@ public class AdventureTime
 
     public static  void gameScreen(int id)
     {
+        // 1 - finding the step
+        Step step = findStep(id);
 
-        for (int i = 0; i < adventureSteps.size(); i++)
+        if(step == null)
         {
-            StepClass step = adventureSteps.get(i);
-            if(step.getId() == id)
-            {
-                System.out.println();
-                System.out.println(step.getStoryText());
-                System.out.println();
-                System.out.println("1) " + step.getOption1Text());
-                System.out.println("2) " + step.getOption2Text());
-                System.out.print("Make a selection: ");
-
-                String choice = scanner.nextLine().strip();
-
-                switch (choice)
-                {
-                    case "1":
-                        System.out.println("Option 1 selected");
-                        break;
-                    case "2":
-                        System.out.println("Option 2 selected");
-                        break;
-                    default:
-                        System.out.println("Select a valid option - try again");
-                }
-            }
+            System.out.println();
+            System.out.println("An error occurred. The step was not found.");
         }
+        else
+        {
+            // 2 - display the step info
+            System.out.println();
+            System.out.println(step.getStoryText());
+            System.out.println();
+            System.out.println("1) " + step.getOption1Text());
+            System.out.println("2) " + step.getOption2Text());
+            System.out.print("Make a selection: ");
+        }
+
+
     }
 
-    public static ArrayList<StepClass> loadAdventure()
+    public static Step findStep(int id)
+    {
+        for(int i= 0; i < adventureSteps.size(); i++)
+        {
+            Step step = adventureSteps.get(i);
+            if(step.getId()== id)
+            {
+                return step;
+            }
+        }
+        return null;
+    }
+
+    public static ArrayList<Step> loadAdventure()
     {
         // create the container
         // ArrayLists grow as needed when you add new items
-        ArrayList<StepClass> steps = new ArrayList<>();
+        ArrayList<Step> steps = new ArrayList<>();
 
         // populate the container
         try {
@@ -100,7 +105,7 @@ public class AdventureTime
                 int option2NextId = Integer.parseInt(columns[5]);
 
                 // create a Step from the data in the current line
-                StepClass stepClass = new StepClass(id, text, option1Text, option1NextId, option2Text, option2NextId);
+                Step stepClass = new Step(id, text, option1Text, option1NextId, option2Text, option2NextId);
 
                 // add the current step to the container (ArrayList)
                 steps.add(stepClass);
