@@ -12,7 +12,6 @@ public class AdventureTime
 
     static void main()
     {
-        adventureSteps = loadAdventure();
 
         // start the application
         homeScreen();
@@ -23,7 +22,8 @@ public class AdventureTime
         System.out.println("Welcome to Adventure Time!");
         System.out.println("--------------------------");
         System.out.println();
-        System.out.println("(P)lay");
+        System.out.println("1) The Dark Forest");
+        System.out.println("2) The Haunted Castle");
         System.out.println("(Q)uit");
         System.out.print("Make a selection: ");
 
@@ -31,7 +31,12 @@ public class AdventureTime
 
         switch (choice)
         {
-            case "P":
+            case "1":
+                adventureSteps = loadAdventure("adventure1.csv");
+                gameScreen(1);
+                break;
+            case "2":
+                adventureSteps = loadAdventure("adventure2.csv");
                 gameScreen(1);
                 break;
             case "Q":
@@ -47,26 +52,43 @@ public class AdventureTime
     public static  void gameScreen(int id)
     {
         // 1 - finding the step
-        Step step = findStep(id);
+        int nextId = id;
 
-        if(step == null)
+        while(nextId != -1)
         {
-            System.out.println();
-            System.out.println("An error occurred. The step was not found.");
-        }
-        else
-        {
-            // 2 - display the step info
-            System.out.println();
-            System.out.println(step.getStoryText());
-            System.out.println();
-            System.out.println("1) " + step.getOption1Text());
-            System.out.println("2) " + step.getOption2Text());
-            System.out.print("Make a selection: ");
+            Step step = findStep(nextId);
+
+            if (step == null)
+            {
+                System.out.println();
+                System.out.println("An error occurred. The step was not found.");
+            }
+            else
+            {
+                // 2 - display the step info
+                System.out.println();
+                System.out.println(step.getStoryText());
+                System.out.println();
+                System.out.println("1) " + step.getOption1Text());
+                System.out.println("2) " + step.getOption2Text());
+                System.out.print("Make a selection: ");
+                String userInput = scanner.nextLine().strip().toLowerCase();
+
+                switch (userInput)
+                {
+                    case "1":
+                        nextId = step.getOption1NextStepId();
+                        break;
+                    case "2":
+                        nextId = step.getOption2NextStepId();
+                        break;
+                }
+            }
         }
 
 
     }
+
 
     public static Step findStep(int id)
     {
@@ -81,7 +103,7 @@ public class AdventureTime
         return null;
     }
 
-    public static ArrayList<Step> loadAdventure()
+    public static ArrayList<Step> loadAdventure(String adventureFile)
     {
         // create the container
         // ArrayLists grow as needed when you add new items
@@ -89,7 +111,7 @@ public class AdventureTime
 
         // populate the container
         try {
-            FileReader fileReader = new FileReader("adventure1.csv");
+            FileReader fileReader = new FileReader(adventureFile);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line = bufferedReader.readLine();
             line = bufferedReader.readLine();
