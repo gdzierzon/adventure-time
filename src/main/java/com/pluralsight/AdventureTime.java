@@ -12,7 +12,6 @@ public class AdventureTime
 
     static void main()
     {
-
         // start the application
         homeScreen();
     }
@@ -24,6 +23,7 @@ public class AdventureTime
         System.out.println();
         System.out.println("1) The Dark Forest");
         System.out.println("2) The Haunted Castle");
+
         System.out.println("(Q)uit");
         System.out.print("Make a selection: ");
 
@@ -49,12 +49,12 @@ public class AdventureTime
 
     }
 
-    public static  void gameScreen(int id)
+    public static void gameScreen(int id)
     {
         // 1 - finding the step
         int nextId = id;
 
-        while(nextId != -1)
+        while (nextId != -1)
         {
             Step step = findStep(nextId);
 
@@ -92,10 +92,10 @@ public class AdventureTime
 
     public static Step findStep(int id)
     {
-        for(int i= 0; i < adventureSteps.size(); i++)
+        for (int i = 0; i < adventureSteps.size(); i++)
         {
             Step step = adventureSteps.get(i);
-            if(step.getId()== id)
+            if (step.getId() == id)
             {
                 return step;
             }
@@ -110,7 +110,8 @@ public class AdventureTime
         ArrayList<Step> steps = new ArrayList<>();
 
         // populate the container
-        try {
+        try
+        {
             FileReader fileReader = new FileReader(adventureFile);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line = bufferedReader.readLine();
@@ -137,7 +138,7 @@ public class AdventureTime
                 line = bufferedReader.readLine();
             }
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             System.err.println(ex);
         }
